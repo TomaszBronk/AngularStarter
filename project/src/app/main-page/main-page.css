@@ -1,0 +1,13 @@
+.main-row {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+app-overview, app-data {
+  flex: 1 1 0;
+  min-width: 0;
+}

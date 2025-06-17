@@ -45,7 +45,7 @@
       "currency": "PLN",
       "type": "Income"
     },
-        {
+    {
       "id": "f8a7b9c0-1d23-4e56-7890-1234abcd5678",
       "title": "Przelew na rachunek oszczędnościowy",
       "date": "2023-10-03T10:15:00.000Z",
@@ -53,6 +53,33 @@
       "amount": 25000,
       "currency": "PLN",
       "type": "Expense"
+    },
+    {
+      "id": "c661c63e-02cc-41ae-bf92-2023864bcb4e",
+      "title": "Nowy przelew testowy",
+      "date": "2025-06-17",
+      "category": "Transport",
+      "amount": 10000,
+      "currency": "PLN",
+      "type": "Income"
+    },
+    {
+      "id": "dc25f7d8-722d-4916-b57b-c0ff9c7adad9",
+      "title": "Kolejny przelew testowy",
+      "date": "2025-06-17",
+      "category": "Media",
+      "amount": 5000,
+      "currency": "PLN",
+      "type": "Expense"
+    },
+    {
+      "id": "434f2ce2-6e6d-4d73-b64d-3c840f0492b0",
+      "title": "Nagroda przelew testowy",
+      "date": "2025-06-17",
+      "category": "Transfer",
+      "amount": 55000,
+      "currency": "PLN",
+      "type": "Income"
     }
   ]
 }

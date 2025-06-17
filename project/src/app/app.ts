@@ -1,16 +1,24 @@
-import { Component, signal } from "@angular/core";
+import { Component } from "@angular/core";
 import { MatIconModule } from "@angular/material/icon";
+import { RouterModule } from "@angular/router";
+import { HeaderComponent } from "./header/header.component";
+import { SidebarComponent } from "./sidebar/sidebar.component";
 
 @Component({
   selector: "app-root",
-  imports: [MatIconModule],
+  standalone: true,
+  imports: [MatIconModule, RouterModule, HeaderComponent, SidebarComponent],
   template: `
-    <h1 class="text-3xl font-bold">
-      <mat-icon fontIcon="emoji_people"></mat-icon>
-      {{ title() }}
-    </h1>
+    <div class="app-layout">
+      <app-header></app-header>
+      <div class="main-content">
+        <app-sidebar></app-sidebar>
+        <div class="content-area">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
   `,
+  styleUrl: "./app.component.css",
 })
-export class App {
-  title = signal("Overview");
-}
+export class App {}
